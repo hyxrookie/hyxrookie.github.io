@@ -279,7 +279,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/19/markdown/">markdown</a>
+      <a class="article-title" href="/2019/10/19/markdown/">markdown使用</a>
     </h1>
   
 
@@ -289,7 +289,64 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <h3 id="markdown用法详解"><a href="#markdown用法详解" class="headerlink" title="markdown用法详解"></a>markdown用法详解</h3><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。最近在使用markdown整理笔记的时候，简直对它爱不释手，因此来整理一下markdown 的基本使用方式，简直是程序员写作的一大神器，强烈推荐上手学习。本次分享的内容主要有以下四点。</p>
+<h4 id="markdown的由来"><a href="#markdown的由来" class="headerlink" title="markdown的由来"></a>markdown的由来</h4><p>markdown的创作者是亚伦·斯沃茨（Aaron Swartz），他发明了这种简单易用的富文本标记语言。<br>这个语言的目的是希望大家使用“易于阅读、易于撰写的纯文字格式，并选择性的转换成 有效的XHTML(或是 HTML)”。帮助我们实现易读易写的功能，快速上手使用</p>
+<h4 id="markdown常用的编辑器推荐"><a href="#markdown常用的编辑器推荐" class="headerlink" title="markdown常用的编辑器推荐"></a>markdown常用的编辑器推荐</h4><h5 id="1-马克飞象"><a href="#1-马克飞象" class="headerlink" title="1.马克飞象"></a>1.马克飞象</h5><p>由于印象笔记Windows客户端暂不支持markdown文本编辑,所以许多使用印象笔记的程序猿就很蛋疼。好在马克飞象帮我们解决了这个问题，它可以帮我们将文本同步到印象笔记中（注意这不是打广告），我最近也一直在使用马克飞象进行笔记总结。有多个主题和详细的使用文档可以查看，用户体验还不错。</p>
+<h5 id="2-小书匠"><a href="#2-小书匠" class="headerlink" title="2.小书匠"></a>2.小书匠</h5><p>一款全平台覆盖的markdown文本编辑器，并且有在线web版，功能很强大。对于不愿折腾的人来说，使用很方便，打开浏览器就可以轻松使用。</p>
+<h5 id="3-简书"><a href="#3-简书" class="headerlink" title="3. 简书"></a>3. 简书</h5><p>简书很早就开始支持markdown语法，并且强烈推荐使用，我们直接可以在简书编辑好发布我们的文章，一气呵成。</p>
+<h5 id="4-掘金"><a href="#4-掘金" class="headerlink" title="4. 掘金"></a>4. 掘金</h5><p>一个开发者技术交流平台，支持markdown语法进行创作。</p>
+<h5 id="5-MarkdownPad"><a href="#5-MarkdownPad" class="headerlink" title="5.MarkdownPad"></a>5.MarkdownPad</h5><p>MarkdownPad 一款全功能的编辑器，被很多人称赞为windows 平台最好用的markdown编辑器。但是界面是英文，怕很多使用者不喜欢</p>
+<h4 id="markdown的基本用法"><a href="#markdown的基本用法" class="headerlink" title="markdown的基本用法"></a>markdown的基本用法</h4><p>说了这么早，终于到正题了。下面开始介绍markdown的基本用法，保证你看完之后很快上手</p>
+<h5 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h5><p>在需要设置标题的文字前面加#来形成标题。在#结束的时候添加空格和标题 分开，最多支持六级标题。下面是实例。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 示例</span></span><br><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h5><p>字体的用法主要有斜体，加粗，斜体加粗，加删除线</p>
+<ul>
+<li><p>加粗<br>前后两个<em>将文字包裹起来<br>*</em>这是加粗的文字**</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//示例</span></span><br><span class="line">**这是加粗的文字**</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>斜体<br>前后一个<em>将文字包裹起来<br>*这是斜体文字</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//示例</span><br><span class="line">*这是斜体的文字*</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>删除线<br><del>添加删除线</del></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//示例</span></span><br><span class="line">~~这是添加删除线的文字~~</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h5><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;,可以一直嵌套下去，只需要继续添加&gt;即可</p>
+<ul>
+<li><p>不加嵌套的引用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 示例</span><br><span class="line">&gt;引用1</span><br><span class="line">&gt;引用2</span><br><span class="line">&gt;引用3</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>添加嵌套的引用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 示例</span><br><span class="line">&gt;引用1</span><br><span class="line">&gt;&gt;引用2</span><br><span class="line">&gt;&gt;&gt; 引用3</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="4-为上下文添加分割线"><a href="#4-为上下文添加分割线" class="headerlink" title="4.为上下文添加分割线"></a>4.为上下文添加分割线</h5><p>需要注意的是至少需要三个同样的符号以上。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 以下几种都可以</span><br><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-图片"><a href="#5-图片" class="headerlink" title="5.图片"></a>5.图片</h5><h5 id="6-超链接"><a href="#6-超链接" class="headerlink" title="6.超链接"></a>6.超链接</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 示例</span><br><span class="line">[百度](http://baidu.com)</span><br><span class="line">行内链接[马克飞象](https://maxiang.io/)</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-代码"><a href="#7-代码" class="headerlink" title="7.代码"></a>7.代码</h5><h5 id="8-列表"><a href="#8-列表" class="headerlink" title="8.列表"></a>8.列表</h5><ul>
+<li><p><strong>无序列表</strong></p>
+</li>
+<li><p><strong>有序列表</strong></p>
+</li>
+<li><p><strong>组合使用</strong></p>
+</li>
+</ul>
+<h5 id="9-表格"><a href="#9-表格" class="headerlink" title="9.表格"></a>9.表格</h5><h5 id="10-反斜杠"><a href="#10-反斜杠" class="headerlink" title="10.反斜杠"></a>10.反斜杠</h5><p>用\来实现转义字符的效果</p>
+<h5 id="11-自动生成目录"><a href="#11-自动生成目录" class="headerlink" title="11.自动生成目录"></a>11.自动生成目录</h5><h5 id="12-自动链接"><a href="#12-自动链接" class="headerlink" title="12.自动链接"></a>12.自动链接</h5>
       
     </div>
     

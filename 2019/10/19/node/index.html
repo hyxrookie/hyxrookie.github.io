@@ -17,18 +17,18 @@
 
 <meta name="description" content="首先无非就是什么是NodeJS？简单的说 Node.js 就是运行在服务端的 JavaScript。 Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台。 Node.js是一个事件驱动I/O服务端JavaScript环境，基于Google的V8引擎，V8引擎执行Javascript的速度非常快，性能非常好。 谁适合阅读本教程？如果你是一个前端程序员，你不懂的像PHP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="article">
+<meta property="og:title" content="node使用总结">
 <meta property="og:url" content="http://yoursite.com/2019/10/19/node/index.html">
 <meta property="og:site_name" content="菜鸡">
 <meta property="og:description" content="首先无非就是什么是NodeJS？简单的说 Node.js 就是运行在服务端的 JavaScript。 Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台。 Node.js是一个事件驱动I/O服务端JavaScript环境，基于Google的V8引擎，V8引擎执行Javascript的速度非常快，性能非常好。 谁适合阅读本教程？如果你是一个前端程序员，你不懂的像PHP">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/10/19/node/D:%5Cblog%5Csource_posts%5Carticle-1%5C072137247047306.png">
-<meta property="og:image" content="http://yoursite.com/2019/10/19/node/D:%5Cblog%5Csource_posts%5Carticle-1%5C072139531573752.png">
-<meta property="og:updated_time" content="2019-10-19T06:16:12.033Z">
+<meta property="og:image" content="http://yoursite.com/2019/10/19/node/D:%5Cblog%5Csource_posts%5Cnode%5C072137247047306.png">
+<meta property="og:image" content="http://yoursite.com/2019/10/19/node/D:%5Cblog%5Csource_posts%5Cnode%5C072139531573752.png">
+<meta property="og:updated_time" content="2019-10-19T06:37:04.670Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="article">
+<meta name="twitter:title" content="node使用总结">
 <meta name="twitter:description" content="首先无非就是什么是NodeJS？简单的说 Node.js 就是运行在服务端的 JavaScript。 Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台。 Node.js是一个事件驱动I/O服务端JavaScript环境，基于Google的V8引擎，V8引擎执行Javascript的速度非常快，性能非常好。 谁适合阅读本教程？如果你是一个前端程序员，你不懂的像PHP">
-<meta name="twitter:image" content="http://yoursite.com/2019/10/19/node/D:%5Cblog%5Csource_posts%5Carticle-1%5C072137247047306.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/10/19/node/D:%5Cblog%5Csource_posts%5Cnode%5C072137247047306.png">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -60,7 +60,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>article | 菜鸡</title>
+<title>node使用总结 | 菜鸡</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -279,7 +279,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      article
+      node使用总结
     </h1>
   
 
@@ -312,11 +312,11 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node helloworld.js</span><br></pre></td></tr></table></figure>
 
 <p>程序执行后，正常的话，就会在终端输出 Hello World。</p>
-<p><img src="/2019/10/19/node/D:%5Cblog%5Csource_posts%5Carticle-1%5C072137247047306.png" alt="072137247047306"></p>
+<p><img src="/2019/10/19/node/D:%5Cblog%5Csource_posts%5Cnode%5C072137247047306.png" alt="072137247047306"></p>
 <h3 id="交互模式"><a href="#交互模式" class="headerlink" title="交互模式"></a>交互模式</h3><p>打开终端，键入node进入命令交互模式，可以输入一条代码语句后立即执行并显示结果，例如：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ node</span><br><span class="line">&gt; console.log(<span class="string">'Hello World!'</span>);</span><br><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2019/10/19/node/D:%5Cblog%5Csource_posts%5Carticle-1%5C072139531573752.png" alt="072139531573752"></p>
+<p><img src="/2019/10/19/node/D:%5Cblog%5Csource_posts%5Cnode%5C072139531573752.png" alt="072139531573752"></p>
 <h1 id="NodeJS的优缺点"><a href="#NodeJS的优缺点" class="headerlink" title="NodeJS的优缺点"></a>NodeJS的优缺点</h1><p><strong>优点：</strong>1. 高并发（最重要的优点）</p>
 <p>\2. 适合I/O密集型应用</p>
 <p><strong>缺点：</strong>1. 不适合CPU密集型应用；CPU密集型应用给Node带来的挑战主要是：由于JavaScript单线程的原因，如果有长时间运行的计算（比如大循环），将会导致CPU时间片不能释放，使得后续I/O无法发起；</p>
@@ -343,12 +343,12 @@
   
     
     <div class="copyright">
-        <p><span>Title:</span><a href="/2019/10/19/node/">article</a></p>
+        <p><span>Title:</span><a href="/2019/10/19/node/">node使用总结</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">rookie</a></p>
         <p><span>Created:</span>2019-10-19, 13:57:26</p>
-        <p><span>Updated:</span>2019-10-19, 14:16:12</p>
+        <p><span>Updated:</span>2019-10-19, 14:37:04</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2019/10/19/node/" title="article">http://yoursite.com/2019/10/19/node/</a>
+            <span>Full URL:</span><a class="post-url" href="/2019/10/19/node/" title="node使用总结">http://yoursite.com/2019/10/19/node/</a>
             <span class="copy-path" data-clipboard-text="From http://yoursite.com/2019/10/19/node/　　By rookie" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -361,10 +361,16 @@
 
     <nav id="article-nav">
         
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2019/10/19/markdown/">
+                    markdown
+                </a>
+            </div>
+        
         
             <div id="article-nav-older" class="article-nav-title">
                 <a href="/2019/10/19/git/">
-                    node使用总结
+                    git使用总结
                 </a>
             </div>
         
@@ -412,7 +418,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"article　| 菜鸡　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"node使用总结　| 菜鸡　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -432,19 +438,21 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+            <a href="/2019/10/19/markdown/" title="Pre: markdown">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2019/10/19/git/" title="Next: node使用总结">
+            <a href="/2019/10/19/git/" title="Next: git使用总结">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/10/19/node/">article</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/19/git/">node使用总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/14/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/10/19/markdown/">markdown</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/19/node/">node使用总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/19/git/">git使用总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/14/hello-world/">Hello World</a></li></ul>
 
 
 

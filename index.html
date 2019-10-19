@@ -289,64 +289,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="markdown用法详解"><a href="#markdown用法详解" class="headerlink" title="markdown用法详解"></a>markdown用法详解</h3><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。最近在使用markdown整理笔记的时候，简直对它爱不释手，因此来整理一下markdown 的基本使用方式，简直是程序员写作的一大神器，强烈推荐上手学习。本次分享的内容主要有以下四点。</p>
-<h4 id="markdown的由来"><a href="#markdown的由来" class="headerlink" title="markdown的由来"></a>markdown的由来</h4><p>markdown的创作者是亚伦·斯沃茨（Aaron Swartz），他发明了这种简单易用的富文本标记语言。<br>这个语言的目的是希望大家使用“易于阅读、易于撰写的纯文字格式，并选择性的转换成 有效的XHTML(或是 HTML)”。帮助我们实现易读易写的功能，快速上手使用</p>
-<h4 id="markdown常用的编辑器推荐"><a href="#markdown常用的编辑器推荐" class="headerlink" title="markdown常用的编辑器推荐"></a>markdown常用的编辑器推荐</h4><h5 id="1-马克飞象"><a href="#1-马克飞象" class="headerlink" title="1.马克飞象"></a>1.马克飞象</h5><p>由于印象笔记Windows客户端暂不支持markdown文本编辑,所以许多使用印象笔记的程序猿就很蛋疼。好在马克飞象帮我们解决了这个问题，它可以帮我们将文本同步到印象笔记中（注意这不是打广告），我最近也一直在使用马克飞象进行笔记总结。有多个主题和详细的使用文档可以查看，用户体验还不错。</p>
-<h5 id="2-小书匠"><a href="#2-小书匠" class="headerlink" title="2.小书匠"></a>2.小书匠</h5><p>一款全平台覆盖的markdown文本编辑器，并且有在线web版，功能很强大。对于不愿折腾的人来说，使用很方便，打开浏览器就可以轻松使用。</p>
-<h5 id="3-简书"><a href="#3-简书" class="headerlink" title="3. 简书"></a>3. 简书</h5><p>简书很早就开始支持markdown语法，并且强烈推荐使用，我们直接可以在简书编辑好发布我们的文章，一气呵成。</p>
-<h5 id="4-掘金"><a href="#4-掘金" class="headerlink" title="4. 掘金"></a>4. 掘金</h5><p>一个开发者技术交流平台，支持markdown语法进行创作。</p>
-<h5 id="5-MarkdownPad"><a href="#5-MarkdownPad" class="headerlink" title="5.MarkdownPad"></a>5.MarkdownPad</h5><p>MarkdownPad 一款全功能的编辑器，被很多人称赞为windows 平台最好用的markdown编辑器。但是界面是英文，怕很多使用者不喜欢</p>
-<h4 id="markdown的基本用法"><a href="#markdown的基本用法" class="headerlink" title="markdown的基本用法"></a>markdown的基本用法</h4><p>说了这么早，终于到正题了。下面开始介绍markdown的基本用法，保证你看完之后很快上手</p>
-<h5 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h5><p>在需要设置标题的文字前面加#来形成标题。在#结束的时候添加空格和标题 分开，最多支持六级标题。下面是实例。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 示例</span></span><br><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
-
-<h5 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h5><p>字体的用法主要有斜体，加粗，斜体加粗，加删除线</p>
-<ul>
-<li><p>加粗<br>前后两个<em>将文字包裹起来<br>*</em>这是加粗的文字**</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//示例</span></span><br><span class="line">**这是加粗的文字**</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>斜体<br>前后一个<em>将文字包裹起来<br>*这是斜体文字</em></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//示例</span><br><span class="line">*这是斜体的文字*</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>删除线<br><del>添加删除线</del></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//示例</span></span><br><span class="line">~~这是添加删除线的文字~~</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h5><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;,可以一直嵌套下去，只需要继续添加&gt;即可</p>
-<ul>
-<li><p>不加嵌套的引用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 示例</span><br><span class="line">&gt;引用1</span><br><span class="line">&gt;引用2</span><br><span class="line">&gt;引用3</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>添加嵌套的引用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 示例</span><br><span class="line">&gt;引用1</span><br><span class="line">&gt;&gt;引用2</span><br><span class="line">&gt;&gt;&gt; 引用3</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="4-为上下文添加分割线"><a href="#4-为上下文添加分割线" class="headerlink" title="4.为上下文添加分割线"></a>4.为上下文添加分割线</h5><p>需要注意的是至少需要三个同样的符号以上。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 以下几种都可以</span><br><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure>
-
-<h5 id="5-图片"><a href="#5-图片" class="headerlink" title="5.图片"></a>5.图片</h5><h5 id="6-超链接"><a href="#6-超链接" class="headerlink" title="6.超链接"></a>6.超链接</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 示例</span><br><span class="line">[百度](http://baidu.com)</span><br><span class="line">行内链接[马克飞象](https://maxiang.io/)</span><br></pre></td></tr></table></figure>
-
-<h5 id="7-代码"><a href="#7-代码" class="headerlink" title="7.代码"></a>7.代码</h5><h5 id="8-列表"><a href="#8-列表" class="headerlink" title="8.列表"></a>8.列表</h5><ul>
-<li><p><strong>无序列表</strong></p>
-</li>
-<li><p><strong>有序列表</strong></p>
-</li>
-<li><p><strong>组合使用</strong></p>
-</li>
-</ul>
-<h5 id="9-表格"><a href="#9-表格" class="headerlink" title="9.表格"></a>9.表格</h5><h5 id="10-反斜杠"><a href="#10-反斜杠" class="headerlink" title="10.反斜杠"></a>10.反斜杠</h5><p>用\来实现转义字符的效果</p>
-<h5 id="11-自动生成目录"><a href="#11-自动生成目录" class="headerlink" title="11.自动生成目录"></a>11.自动生成目录</h5><h5 id="12-自动链接"><a href="#12-自动链接" class="headerlink" title="12.自动链接"></a>12.自动链接</h5>
+              <h3 id="markdown用法详解"><a href="#markdown用法详解" class="headerlink" title="markdown用法详解"></a>markdown用法详解</h3><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。最近在使用markdown整理笔记的时候，简直对它爱不释手，因此来整理一下markdown 的基本使用方式，简直是程序员写作的一大神器，强烈推荐上手学习。本次分享的内容主要有以下四点。</p>
+          
       
     </div>
     
@@ -355,6 +299,10 @@
       
 
       
+      
+        <p class="article-more-link">
+          <a href="/2019/10/19/markdown/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -401,46 +349,14 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="首先无非就是什么是NodeJS？"><a href="#首先无非就是什么是NodeJS？" class="headerlink" title="首先无非就是什么是NodeJS？"></a>首先无非就是什么是NodeJS？</h1><p>简单的说 Node.js 就是运行在服务端的 JavaScript。</p>
+              <h1 id="首先无非就是什么是NodeJS？"><a href="#首先无非就是什么是NodeJS？" class="headerlink" title="首先无非就是什么是NodeJS？"></a>首先无非就是什么是NodeJS？</h1><p>简单的说 Node.js 就是运行在服务端的 JavaScript。</p>
 <p>Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台。</p>
 <p>Node.js是一个事件驱动I/O服务端JavaScript环境，基于Google的V8引擎，V8引擎执行Javascript的速度非常快，性能非常好。</p>
 <h2 id="谁适合阅读本教程？"><a href="#谁适合阅读本教程？" class="headerlink" title="谁适合阅读本教程？"></a>谁适合阅读本教程？</h2><p>如果你是一个前端程序员，你不懂的像PHP、Python或Java等动态编程语言，然后你想创建自己的服务，那么Node.js是一个非常好的选择。</p>
 <p>Node.js 是运行在服务端的 JavaScript，如果你熟悉Javascript，那么你将会很容易的学会Node.js。</p>
 <p>当然，如果你是后端程序员，想部署一些高性能的服务，那么学习Node.js也是一个非常好的选择。</p>
 <p><u></u></p>
-<h2 id="学习本教程前你需要了解"><a href="#学习本教程前你需要了解" class="headerlink" title="学习本教程前你需要了解"></a>学习本教程前你需要了解</h2><p>在继续本教程之前，你应该了解一些基本的计算机编程术语。如果你学习过Javascript,PHP，Java等编程语言，将有助于你更快的了解Node.js编程。</p>
-<hr>
-<h2 id="第一个Node-js程序：Hello-World！"><a href="#第一个Node-js程序：Hello-World！" class="headerlink" title="第一个Node.js程序：Hello World！"></a>第一个Node.js程序：Hello World！</h2><h3 id="脚本模式"><a href="#脚本模式" class="headerlink" title="脚本模式"></a>脚本模式</h3><p>以下是我们的第一个Node.js程序：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(<span class="string">"Hello World"</span>);</span><br></pre></td></tr></table></figure>
-
-<p>保存该文件，文件名为 helloworld.js， 并通过 node命令来执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node helloworld.js</span><br></pre></td></tr></table></figure>
-
-<p>程序执行后，正常的话，就会在终端输出 Hello World。</p>
-<p><img src="/2019/10/19/node/D:%5Cblog%5Csource_posts%5Cnode%5C072137247047306.png" alt="072137247047306"></p>
-<h3 id="交互模式"><a href="#交互模式" class="headerlink" title="交互模式"></a>交互模式</h3><p>打开终端，键入node进入命令交互模式，可以输入一条代码语句后立即执行并显示结果，例如：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ node</span><br><span class="line">&gt; console.log(<span class="string">'Hello World!'</span>);</span><br><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2019/10/19/node/D:%5Cblog%5Csource_posts%5Cnode%5C072139531573752.png" alt="072139531573752"></p>
-<h1 id="NodeJS的优缺点"><a href="#NodeJS的优缺点" class="headerlink" title="NodeJS的优缺点"></a>NodeJS的优缺点</h1><p><strong>优点：</strong>1. 高并发（最重要的优点）</p>
-<p>\2. 适合I/O密集型应用</p>
-<p><strong>缺点：</strong>1. 不适合CPU密集型应用；CPU密集型应用给Node带来的挑战主要是：由于JavaScript单线程的原因，如果有长时间运行的计算（比如大循环），将会导致CPU时间片不能释放，使得后续I/O无法发起；</p>
-<p>解决方案：分解大型运算任务为多个小任务，使得运算能够适时释放，不阻塞I/O调用的发起；</p>
-<p>\2. 只支持单核CPU，不能充分利用CPU</p>
-<p>\3. 可靠性低，一旦代码某个环节崩溃，整个系统都崩溃</p>
-<p>原因：单进程，单线程</p>
-<p>解决方案：（1）Nnigx反向代理，负载均衡，开多个进程，绑定多个端口；</p>
-<p>（2）开多个进程监听同一个端口，使用cluster模块；</p>
-<p>\4. 开源组件库质量参差不齐，更新快，向下不兼容</p>
-<p>\5. Debug不方便，错误没有stack trace</p>
-<h2 id="适合NodeJS的场景"><a href="#适合NodeJS的场景" class="headerlink" title="适合NodeJS的场景"></a><strong>适合NodeJS的场景</strong></h2><p>\1. RESTful API</p>
-<p>这是NodeJS最理想的应用场景，可以处理数万条连接，本身没有太多的逻辑，只需要请求API，组织数据进行返回即可。它本质上只是从某个数据库中查找 一些值并将它们组成一个响应。由于响应是少量文本，入站请求也是少量的文本，因此流量不高，一台机器甚至也可以处理最繁忙的公司的API需求。</p>
-<p>\2. 统一Web应用的UI层</p>
-<p>目前MVC的架构，在某种意义上来说，Web开发有两个UI层，一个是在浏览器里面我们最终看到的，另一个在server端，负责生成和拼接页面。</p>
-<p>不讨论这种架构是好是坏，但是有另外一种实践，面向服务的架构，更好的做前后端的依赖分离。如果所有的关键业务逻辑都封装成REST调用，就意味着在上层 只需要考虑如何用这些REST接口构建具体的应用。那些后端程序员们根本不操心具体数据是如何从一个页面传递到另一个页面的，他们也不用管用户数据更新是 通过Ajax异步获取的还是通过刷新页面。</p>
-<p>\3. 大量Ajax请求的应用</p>
-<p>例如个性化应用，每个用户看到的页面都不一样，缓存失效，需要在页面加载的时候发起Ajax请求，NodeJS能响应大量的并发请求。　　总而言之，NodeJS适合运用在高并发、I/O密集、少量业</p>
-
+          
       
     </div>
     
@@ -449,6 +365,10 @@
       
 
       
+      
+        <p class="article-more-link">
+          <a href="/2019/10/19/node/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -495,41 +415,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>第一次学习Git，遇到的困难有很多，踩了很多坑，但是也收获了不多，自己零零散散的记了不少笔记。想着抽时间出来把各处的记录整合一下，一来是知识能够系统一点，二来是方便未来忘了解决方案的自己。</p>
-<h5 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h5><p>Git相比于SVN的优势<br>1.分布式<br>SVN是程序集中存放在服务器中，开发下载代码到自己电脑上。git是将完整的版本库存放在各个用户的电脑上，去中心化。<br>好处就是查看版本记录不受网络的影响，不会因为svn服务器影响自己业务的开发或者回滚进度。</p>
-<p>2.存储方式<br>svn等这些存储数据，主要是通过文件变更列表的方式来存储信息，将保存的信息看做是一组基本文件和每个文件随时间逐步累积的差异。Git采用的是把数据看作是对小型文件系统的一组快照。对保存项目时的全部文件制作一个快照，并保存快照索引。<br>git有一个元数据，就是.git文件夹里的信息。关于与版本控制有关的信息都在这里面集中存放。<br>别人的文章里提到svn是每个文件都有一个.svn文件，管理起来麻烦，并且目录文件忽略的时候设置起来相当麻烦，这个有体会，而在git里只需要维护一个.gitignore的文件就行了，方便不少。在.gitignore文件里只要列出要忽略的文件模式，可以过滤掉不需要跟踪的文件</p>
-<h4 id="分支简介"><a href="#分支简介" class="headerlink" title="分支简介"></a>分支简介</h4><p>之前说过git保存的不是文件的变化或者差异，而是一系列不同时刻的文件快照。</p>
-<p>在进行提交操作时，git会保存一个提交对象（commit object），该提交对象会包含一个指向暂存内容快照的指针，同时还有一些提交信息和指向父对象的指针。</p>
-<p>git仓库中的对象分为三类，一个是提交对象，包含指向前述树对象的指针和提交信息；一种是树对象，记录着目录结构和blob对象索引；blob对象，一般有多个，保存着文件快照</p>
-<p>（所以其实git的管理就是创建了一个提交信息的链表）</p>
-<p>所以git其实只是管理的提交对象以及其内部存储的文件信息和提交信息，所谓不同的分支其实就是指向不同提交对象节点的一些指针而已。</p>
-<p>HEAD指向当前所在的分支，相当于一个分支的别名。指向会在checkout时修改。</p>
-<h4 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h4><p>master<br>远端的master分支是每个使用者最熟悉的，</p>
-<p>develop<br>这个分支作为主要的开发分支，被称作集成分支。平行于master分支，当develop这个分支达到稳定，并且准备好发版的时候，就合并到master分支上去，并标注好发布的版本号。</p>
-<p>feature<br>这个分支应该是从develop这个分支分出来的，这个是开发新功能所开的分支。当开发一个新功能时，这个功能的目标版本可能是未知的。feature这个分支的精髓在于会和这个功能的开发周期一样长，但最终会合并到develop里或者是被丢弃。这个一般只在开发者的repo里存在，不会放进origin里</p>
-<h4 id="Git基本操作"><a href="#Git基本操作" class="headerlink" title="Git基本操作"></a>Git基本操作</h4><p>1.常用命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">git branch -r #查看远程分支</span><br><span class="line">git branch -a #查看所有分支</span><br><span class="line">git branch    #查看本地分支，后面带有参数的话可以创建本地分支</span><br><span class="line">git branch -vv #这个是查看本地分支与远程分支的映射关系</span><br><span class="line"></span><br><span class="line">git checkout  #带有参数的话可以切换到那个分支</span><br><span class="line">git checkout -b dev origin/develop #新建一个本地分支dev，与远程分支develop建立映射关系，并切换工作分支到这个分支。</span><br><span class="line">Switched to a new branch &apos;dev&apos; # Branch &apos;dev&apos; set up to track remote branch &apos;develop&apos; from &apos;origin&apos;.（执行后控制台的输出）</span><br><span class="line"></span><br><span class="line">git pull #拉取当前分支代码</span><br><span class="line">git push</span><br><span class="line"></span><br><span class="line">git commit -amend #撤销操作</span><br><span class="line"></span><br><span class="line">git add *  # 多功能命令 跟踪新文件/把已跟踪文件放到暂存区/合并时将有冲突的文件标记位已解决状态</span><br><span class="line"></span><br><span class="line"># 对于这个命令的含义应该理解为“添加内容到下一次提交中”</span><br><span class="line"></span><br><span class="line"># 如果修改了一个已被跟踪的文件，使用status会出现changes not staged for commit</span><br><span class="line"></span><br><span class="line"># 这说明跟踪的文件已经发生了变化，但是没有放进暂存区</span><br><span class="line"></span><br><span class="line"># 查看哪些文件处于什么状态</span><br><span class="line"></span><br><span class="line"># 主要是显示上次提交过后的修改，以及当前分支与对应远程分支之前的偏离</span><br><span class="line"></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line">git diff # 查看尚未暂存的文件更新了那些部分</span><br><span class="line"></span><br><span class="line">git diff --cached</span><br><span class="line">git diff --staged # 这两个命令都是查看已暂存的将要添加到下次提交里的内容，后者需要高一些的版本而已</span><br><span class="line"></span><br><span class="line">git commit    # 这种提交方式会启动文本编辑器输入本次提交的说明</span><br><span class="line">git commit -m # 会将提交命令放在同一行</span><br><span class="line">git commit -a # 直接把所有已经跟踪过的文件暂存起了一并提交</span><br><span class="line"></span><br><span class="line">git rm # 从已跟踪文件清单（暂存区域）和工作目录中删除指定的文件</span><br><span class="line"></span><br><span class="line"># 如果只是从工作目录中收工删除文件，会在git status时出现 changes mot staged for commit</span><br><span class="line"></span><br><span class="line">git rm -f # -f = force 删除之前如果放到暂存区的话应使用这个，防止误删没有添加到快照的数据</span><br><span class="line"></span><br><span class="line">git log # 查看提交历史（这个用命令行太麻烦了，不需要）</span><br><span class="line"></span><br><span class="line">git reset # 用来取消暂存</span><br><span class="line"></span><br><span class="line">git push (origin) (branch) # 将自己的项目推送到远端分支</span><br><span class="line"></span><br><span class="line">untracked 未跟踪，意思是git在之前的提交中没有这些文件，git不会自动将文件纳入跟踪范围，这样可以保证自动生成的二进制文件或者缓存文件包含进来（比如python会自动生成的__pycache__文件）</span><br></pre></td></tr></table></figure>
-
-<p>2.feature分支的创建与合并</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">## 合并可以先考虑合并到本地dev，再把本地dev推到远端</span><br><span class="line"></span><br><span class="line"># creating a feature branch</span><br><span class="line">git checkout -b myfeature develop</span><br><span class="line"># Switched to a new branch &quot;myfeature&quot;</span><br><span class="line"></span><br><span class="line"># merge</span><br><span class="line">git checkout develop</span><br><span class="line"># Swritched to branch &apos;develop&apos;</span><br><span class="line"></span><br><span class="line">git merge --no-ff myfeature</span><br><span class="line">git branch -d myfeature</span><br><span class="line">git push origin develop</span><br></pre></td></tr></table></figure>
-
-<p>3.release分支从develop分支的创建</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b release-1.2 develop</span><br><span class="line"># Switched to a new branch &apos;release-1.2&apos;</span><br><span class="line"></span><br><span class="line">./bump-version.sh 1.2</span><br><span class="line"># Files modified successfully,version bumped 1.2.</span><br><span class="line"></span><br><span class="line">$ git commit -a -m &quot;Bumped version number to 1.2&quot;</span><br><span class="line"># [release-1.2 ...] Bumped version number to 1.2</span><br><span class="line"># 1 files changed, 1 insertions(+), 1 deletion(-)</span><br></pre></td></tr></table></figure>
-
-<h3 id="踩过的坑"><a href="#踩过的坑" class="headerlink" title="踩过的坑"></a>踩过的坑</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push --set-upstream origin feature-htmlReport</span><br></pre></td></tr></table></figure>
-
-<p>推本地分支到远端（在远端没有这个分支的情况下使用）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push (remote) (branch)</span><br></pre></td></tr></table></figure>
-
-<p>   1.已经commit的会在push的时候全部带上，说白了一个是提交一个是推到远端<br>   2.git push origin …和git pull origin…分别是拉到本地和推到远端，推到远端没有用过，但是推之前很明显应该先拉到本地检查冲突，避免把别人提交的代码覆盖了，而pull之前又需要stash本地的代码，那就是要用到commit了<br><code>untracked files</code>问题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">git status # 用这个命令查看当前的git状态，根据这个状态来寻找解决办法，很好用</span><br><span class="line"></span><br><span class="line"># 问题是会在控制台显示changes not staged for commit，以及untracked files</span><br><span class="line"># 首先删除跟踪</span><br><span class="line"></span><br><span class="line"> git rm logs/\*.git</span><br><span class="line"> </span><br><span class="line"># 发现error，因为the following files have local modifications</span><br><span class="line">(use --cached to keep the file, or -f to force removal)</span><br><span class="line"> </span><br><span class="line"> git rm -f logs/\*.log</span><br><span class="line"> </span><br><span class="line"># 之后再尝试pull</span><br><span class="line"></span><br><span class="line"> git pull origin develop</span><br><span class="line"></span><br><span class="line"># 依旧出现error，The following untracked working tree files would be overwritten by merge: .... Please move or remove them before you merge.</span><br><span class="line"># 在StackOverflow上找到的解决办法</span><br><span class="line"></span><br><span class="line"> git add ....（相关文件）</span><br><span class="line"> git stash</span><br><span class="line"> git pull</span><br><span class="line"></span><br><span class="line">(之后就是解决冲突了)</span><br><span class="line"></span><br><span class="line"> git push</span><br><span class="line"> </span><br><span class="line">(结束)</span><br></pre></td></tr></table></figure>
-
-<p>出现问题的原因，本地的.gitignore和其他分支上的不同，导致pull到我本地的时候出现。<br>由于本地没有追踪这个文件，但是远程追踪了，所以pull会强制覆盖本地没有进入版本控制下的文件。</p>
-<p>git fetch 从服务器上抓取本地没有的数据时，不会修改工作目录，而是让你自己合并。<br>git pull 相当于git fetch 加上git merge，所以有时候会出现问题</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>希望自己能够尽快彻底地熟悉git命令，做到不需要使用ide提供的功能。（当然有些好用的功能，比如快速解决冲突以及修改高亮这些是不可能不用的，工具毕竟还是为了效率而生的）</p>
-<p>特别说一下Git，这个中文版文档是真的很好用了，虽然对于你遇到的某个问题可能在stackoverflow上解决的更快，但是只要你耐心地读完完整的文档，你自然会知道该怎么去做。</p>
-<p>其实我也还没有完整的看过一遍，只是阅读了前三章关于git基础和操作的部分。感兴趣、有时间的话，自然是全部读完更好，但是仅作为一个工具，目前已经足够，因为还有太多的东西等着去学，精力不足，对于很多东西没有办法太过深入，只能浅尝辄止，留待将来。</p>
-<h4 id><a href="#" class="headerlink" title></a></h4>
+              <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>第一次学习Git，遇到的困难有很多，踩了很多坑，但是也收获了不多，自己零零散散的记了不少笔记。想着抽时间出来把各处的记录整合一下，一来是知识能够系统一点，二来是方便未来忘了解决方案的自己。</p>
+          
       
     </div>
     
@@ -538,6 +425,10 @@
       
 
       
+      
+        <p class="article-more-link">
+          <a href="/2019/10/19/git/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>

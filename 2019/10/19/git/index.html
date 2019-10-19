@@ -15,17 +15,17 @@
 
 
 
-<meta name="description" content="引言第一次学习Git，遇到的困难有很多，踩了很多坑，但是也收获了不多，自己零零散散的记了不少笔记。想着抽时间出来把各处的记录整合一下，一来是知识能够系统一点，二来是方便未来忘了解决方案的自己。 学习笔记Git相比于SVN的优势1.分布式SVN是程序集中存放在服务器中，开发下载代码到自己电脑上。git是将完整的版本库存放在各个用户的电脑上，去中心化。好处就是查看版本记录不受网络的影响，不会因为svn">
+<meta name="description" content="引言第一次学习Git，遇到的困难有很多，踩了很多坑，但是也收获了不多，自己零零散散的记了不少笔记。想着抽时间出来把各处的记录整合一下，一来是知识能够系统一点，二来是方便未来忘了解决方案的自己。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git使用总结">
 <meta property="og:url" content="http://yoursite.com/2019/10/19/git/index.html">
 <meta property="og:site_name" content="菜鸡">
-<meta property="og:description" content="引言第一次学习Git，遇到的困难有很多，踩了很多坑，但是也收获了不多，自己零零散散的记了不少笔记。想着抽时间出来把各处的记录整合一下，一来是知识能够系统一点，二来是方便未来忘了解决方案的自己。 学习笔记Git相比于SVN的优势1.分布式SVN是程序集中存放在服务器中，开发下载代码到自己电脑上。git是将完整的版本库存放在各个用户的电脑上，去中心化。好处就是查看版本记录不受网络的影响，不会因为svn">
+<meta property="og:description" content="引言第一次学习Git，遇到的困难有很多，踩了很多坑，但是也收获了不多，自己零零散散的记了不少笔记。想着抽时间出来把各处的记录整合一下，一来是知识能够系统一点，二来是方便未来忘了解决方案的自己。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-19T06:53:01.675Z">
+<meta property="og:updated_time" content="2019-10-19T07:08:36.365Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git使用总结">
-<meta name="twitter:description" content="引言第一次学习Git，遇到的困难有很多，踩了很多坑，但是也收获了不多，自己零零散散的记了不少笔记。想着抽时间出来把各处的记录整合一下，一来是知识能够系统一点，二来是方便未来忘了解决方案的自己。 学习笔记Git相比于SVN的优势1.分布式SVN是程序集中存放在服务器中，开发下载代码到自己电脑上。git是将完整的版本库存放在各个用户的电脑上，去中心化。好处就是查看版本记录不受网络的影响，不会因为svn">
+<meta name="twitter:description" content="引言第一次学习Git，遇到的困难有很多，踩了很多坑，但是也收获了不多，自己零零散散的记了不少笔记。想着抽时间出来把各处的记录整合一下，一来是知识能够系统一点，二来是方便未来忘了解决方案的自己。">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -294,6 +294,8 @@
       
           
         <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>第一次学习Git，遇到的困难有很多，踩了很多坑，但是也收获了不多，自己零零散散的记了不少笔记。想着抽时间出来把各处的记录整合一下，一来是知识能够系统一点，二来是方便未来忘了解决方案的自己。</p>
+<a id="more"></a>
+
 <h5 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h5><p>Git相比于SVN的优势<br>1.分布式<br>SVN是程序集中存放在服务器中，开发下载代码到自己电脑上。git是将完整的版本库存放在各个用户的电脑上，去中心化。<br>好处就是查看版本记录不受网络的影响，不会因为svn服务器影响自己业务的开发或者回滚进度。</p>
 <p>2.存储方式<br>svn等这些存储数据，主要是通过文件变更列表的方式来存储信息，将保存的信息看做是一组基本文件和每个文件随时间逐步累积的差异。Git采用的是把数据看作是对小型文件系统的一组快照。对保存项目时的全部文件制作一个快照，并保存快照索引。<br>git有一个元数据，就是.git文件夹里的信息。关于与版本控制有关的信息都在这里面集中存放。<br>别人的文章里提到svn是每个文件都有一个.svn文件，管理起来麻烦，并且目录文件忽略的时候设置起来相当麻烦，这个有体会，而在git里只需要维护一个.gitignore的文件就行了，方便不少。在.gitignore文件里只要列出要忽略的文件模式，可以过滤掉不需要跟踪的文件</p>
 <h4 id="分支简介"><a href="#分支简介" class="headerlink" title="分支简介"></a>分支简介</h4><p>之前说过git保存的不是文件的变化或者差异，而是一系列不同时刻的文件快照。</p>
@@ -338,7 +340,7 @@
         <p><span>Title:</span><a href="/2019/10/19/git/">git使用总结</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">rookie</a></p>
         <p><span>Created:</span>2019-10-19, 13:51:00</p>
-        <p><span>Updated:</span>2019-10-19, 14:53:01</p>
+        <p><span>Updated:</span>2019-10-19, 15:08:36</p>
         <p>
             <span>Full URL:</span><a class="post-url" href="/2019/10/19/git/" title="git使用总结">http://yoursite.com/2019/10/19/git/</a>
             <span class="copy-path" data-clipboard-text="From http://yoursite.com/2019/10/19/git/　　By rookie" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
